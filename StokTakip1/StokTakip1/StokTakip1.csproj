@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0A5254E9-93C2-4F84-9E5A-A84DA2C6888F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StokTakip1</RootNamespace>
+    <AssemblyName>StokTakip1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="firmaKategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="firmaKategori.Designer.cs">
+      <DependentUpon>firmaKategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="firmaMarka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="firmaMarka.Designer.cs">
+      <DependentUpon>firmaMarka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirmaMüşteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirmaMüşteriEkle.Designer.cs">
+      <DependentUpon>FirmaMüşteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirmaMüşteriListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirmaMüşteriListele.Designer.cs">
+      <DependentUpon>FirmaMüşteriListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FirmaSatış.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirmaSatış.Designer.cs">
+      <DependentUpon>FirmaSatış.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSatış.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSatış.Designer.cs">
+      <DependentUpon>frmSatış.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSatışListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSatışListele.Designer.cs">
+      <DependentUpon>frmSatışListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrünListele.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UrünListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrünListele.Designer.cs">
+      <DependentUpon>UrünListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ÜrünEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ÜrünEkleme.Designer.cs">
+      <DependentUpon>ÜrünEkleme.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="firmaKategori.resx">
+      <DependentUpon>firmaKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="firmaMarka.resx">
+      <DependentUpon>firmaMarka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirmaMüşteriEkle.resx">
+      <DependentUpon>FirmaMüşteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirmaMüşteriListele.resx">
+      <DependentUpon>FirmaMüşteriListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirmaSatış.resx">
+      <DependentUpon>FirmaSatış.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSatışListele.resx">
+      <DependentUpon>frmSatışListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UrünListele.resx">
+      <DependentUpon>UrünListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ÜrünEkleme.resx">
+      <DependentUpon>ÜrünEkleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
